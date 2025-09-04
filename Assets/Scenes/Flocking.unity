@@ -342,11 +342,11 @@ Transform:
   m_GameObject: {fileID: 278505675}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.70710677, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 5.69, y: -0.06, z: -0.49}
+  m_LocalPosition: {x: 0.574708, y: -6.628155, z: -4.0482635}
   m_LocalScale: {x: 11.9425, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 786907203}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &346613279
 GameObject:
@@ -376,11 +376,11 @@ Transform:
   m_GameObject: {fileID: 346613279}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.14, z: 0}
+  m_LocalPosition: {x: -5.115292, y: -7.708155, z: -3.5582633}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 414426977}
+  m_Father: {fileID: 786907203}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!64 &346613281
 MeshCollider:
@@ -488,8 +488,44 @@ Transform:
   m_Children:
   - {fileID: 7614840}
   - {fileID: 878806156}
-  - {fileID: 346613280}
+  - {fileID: 786907203}
   m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &786907202
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 786907203}
+  m_Layer: 0
+  m_Name: Bounds
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &786907203
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 786907202}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 5.115292, y: 6.5681553, z: 3.5582633}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1235927061}
+  - {fileID: 1560819515}
+  - {fileID: 978427716}
+  - {fileID: 278505679}
+  - {fileID: 346613280}
+  m_Father: {fileID: 414426977}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &878806154
 GameObject:
@@ -642,11 +678,11 @@ Transform:
   m_GameObject: {fileID: 978427712}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.70710677, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -5.53, y: -0.06, z: -0.49}
+  m_LocalPosition: {x: -10.645292, y: -6.628155, z: -4.0482635}
   m_LocalScale: {x: 11.9425, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 786907203}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1235927057
 GameObject:
@@ -749,12 +785,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1235927057}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.43, y: -0.06, z: 5}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -4.6852922, y: -6.628155, z: 1.4417367}
   m_LocalScale: {x: 11.9425, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 786907203}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1391347412
 GameObject:
@@ -949,12 +985,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1560819511}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.43, y: -0.06, z: -5.41}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -4.6852922, y: -6.628155, z: -8.968264}
   m_LocalScale: {x: 11.9425, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 786907203}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
@@ -962,7 +998,3 @@ SceneRoots:
   m_Roots:
   - {fileID: 1391347415}
   - {fileID: 414426977}
-  - {fileID: 1235927061}
-  - {fileID: 1560819515}
-  - {fileID: 978427716}
-  - {fileID: 278505679}
