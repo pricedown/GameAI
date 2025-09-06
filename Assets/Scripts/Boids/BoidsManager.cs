@@ -1,16 +1,17 @@
 using UnityEngine;
 
-public class BoidsManager : MonoBehaviour
+namespace Boids
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public class BoidsManager : MonoBehaviour
     {
+        void Start()
+        {
         
-    }
+        }
 
-    // Update is called once per frame
-    void Update()
-    {
+        void Update()
+        {
         
+        }
     }
 }
