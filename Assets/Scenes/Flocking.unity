@@ -693,8 +693,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1150930255}
-  - component: {fileID: 1150930257}
   - component: {fileID: 1150930256}
+  - component: {fileID: 1150930257}
   m_Layer: 0
   m_Name: Boids
   m_TagString: Untagged
@@ -734,7 +734,8 @@ MonoBehaviour:
     x: 20
     y: 10
     width: 200
-    height: 100
+    height: 455
+  boidManager: {fileID: 1150930257}
 --- !u!114 &1150930257
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -744,9 +745,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 1150930254}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0607ad26f1c360047825e0c3ed827918, type: 3}
+  m_Script: {fileID: 11500000, guid: 46544e41522a0344eab09c8188421f60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  computeShader: {fileID: 7200000, guid: 68e603c51239e104f96b65e53c2ff11c, type: 3}
+  boundsRadius: 100
+  boundsTurnSpeed: 1
+  spawnedBoids: 1000
+  spawnRadius: 20
+  boidParams:
+    moveSpeed: 5.75
+    turnSpeed: 5
+    isAlignmentEnabled: 1
+    alignmentRadius: 7.03
+    alignmentWeight: 0.73
+    isCohesionEnabled: 1
+    cohesionRadius: 6.47
+    cohesionWeight: 1
+    isSeparationEnabled: 1
+    separationRadius: 0.48
+    separationWeight: 0.19
+  boidMesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  boidMaterial: {fileID: 2100000, guid: f1f32628e07774247880a71dcd37e8a5, type: 2}
 --- !u!1 &1215644976
 GameObject:
   m_ObjectHideFlags: 0
@@ -898,6 +918,8 @@ GameObject:
   - component: {fileID: 1391347415}
   - component: {fileID: 1391347414}
   - component: {fileID: 1391347413}
+  - component: {fileID: 1391347416}
+  - component: {fileID: 1391347417}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -923,7 +945,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.8314792, g: 0.8786712, b: 0.9528302, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -979,6 +1001,64 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1391347416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1391347412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
+  m_TaaSettings:
+    m_Quality: 3
+    m_FrameInfluence: 0.1
+    m_JitterScale: 1
+    m_MipBias: 0
+    m_VarianceClampScale: 0.9
+    m_ContrastAdaptiveSharpening: 0
+--- !u!114 &1391347417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1391347412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b662c763ad639214b87ccde8cab968aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 10
+  lookSpeed: 2
 --- !u!1 &1565011896
 GameObject:
   m_ObjectHideFlags: 0
